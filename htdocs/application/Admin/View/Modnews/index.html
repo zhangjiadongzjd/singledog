@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Insert title here</title>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/admin/css/admin.css" media="all"/>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/admin/css/global.css" media="all"/>
+<script src="__PUBLIC__/admin/js/jquery-1.8.0.js"></script>
+<script>
+	function modnews(newsId){
+			window.location="__URL__/modarea/newsId/"+newsId;
+		}
+	function modnewsimg(newsId){
+			window.location="__URL__/modimgarea/newsId/"+newsId;
+	}
+	function del(delId){
+		if(confirm('是否确认删除该游戏信息')){
+			window.location="__URL__/delnews/delId/"+delId;
+		}
+	}
+	
+</script>
+<style>
+table{
+	width:945px;
+	margin:0 auto;
+}
+table tr{
+	height:40px;
+	font-size: 16px;
+    font-family: "微软雅黑 ";
+}
+a{
+	color:#00f;
+	text-decoration:underline;
+	cursor:pointer;
+}
+</style>
+</head>
+<body>
+<!-- 头部 -->
+<include file='public:top'/>
+<!-- 当前位置 -->
+<div id='locationdiv'>
+	<div>
+		<p>后台管理 : 修改新闻</p>
+	</div>
+</div>
+<!-- 正文内容 -->
+<div id='main-content'>
+	<div id='main-content1'>
+		<!-- 左侧树状列表 -->
+		<include file='public:left'/>
+		<!-- 右侧页面内容 -->
+		<div id='rightDiv'>
+			<div style='width:950px;height:300px;margin:0 auto;margin-top:50px;'>
+				<form action="" method='post' name='frm' enctype="multipart/form-data">
+					<table border='1' cellspacing='0' cellpadding='0'>
+						<tr>
+							
+								<th>新闻编号</th>
+								<th>新闻类型</th>
+								<th>新闻标题</th>
+								<th>发表时间</th>
+								<th>操作</th>
+							
+						</tr>
+					<foreach name='news' item='v'>
+						<tr>
+							
+								<td>{$v.id}</td>
+								<td>{$v.gamestypename}</td>
+								<td>{$v.title}</td>
+								<td>{$v.time}</td>
+								<td>&nbsp;<a href="#" onclick="modnews({$v.id})">修改内容</a>&nbsp;|&nbsp;<a href="#" onclick="modnewsimg({$v.id})">修改图片</a>&nbsp;|&nbsp;<a href="#" onclick="del({$v.id})">删除</a></td>
+							
+						</tr>
+					</foreach>
+					<tr>
+						<td colspan='5'>{$pageList}</td>
+					</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

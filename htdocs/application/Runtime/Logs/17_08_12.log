@@ -1,0 +1,877 @@
+[ 2017-08-12T00:11:04+08:00 ] 220.181.108.176 /home.php/gamesdetails/index/typeId/1/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001633s ]
+SQL: SELECT * FROM `gamestype` LIMIT 0,3   [ RunTime:0.001375s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001549s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` WHERE ( tid=1 ) LIMIT 1   [ RunTime:0.001373s ]
+SQL: SELECT * FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 8,4   [ RunTime:0.001588s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/cff27e63c4e56700283b6a48118f6b99.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2017-08-12T00:35:46+08:00 ] 106.11.159.230 /home.php/Gamesnews/index/newsId/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001652s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001519s ]
+SQL: UPDATE `gamesnews` SET `hints`=hints+1 WHERE ( id=3 ) [ RunTime:0.005270s ]
+SQL: SELECT * FROM `gamesnews` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.001312s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001448s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `newsimg` WHERE ( newsid=3 ) LIMIT 1   [ RunTime:0.001398s ]
+SQL: SELECT * FROM `newsimg` WHERE ( newsid=3 ) ORDER BY shunxu  [ RunTime:0.001451s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/560da5e34cc660081ae9269f103ae089.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2017-08-12T00:38:42+08:00 ] 202.108.211.56 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001838s ]
+SQL: SELECT * FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,5   [ RunTime:0.001659s ]
+SQL: SELECT * FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,5   [ RunTime:0.001419s ]
+SQL: SELECT * FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,5   [ RunTime:0.002229s ]
+SQL: SELECT * FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,5   [ RunTime:0.001375s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='英雄联盟' ) LIMIT 1   [ RunTime:0.001269s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='地下城与勇士' ) LIMIT 1   [ RunTime:0.001265s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='阴阳师' ) LIMIT 1   [ RunTime:0.001304s ]
+SQL: SELECT `gamesname`,`gamehot` FROM `gamesdetails` WHERE ( tid=1 ) LIMIT 0,12   [ RunTime:0.001300s ]
+SQL: SELECT `gamesname`,`gamehot` FROM `gamesdetails` WHERE ( tid=3 ) LIMIT 0,12   [ RunTime:0.001346s ]
+SQL: SELECT `gamesname`,`gamehot` FROM `gamesdetails` WHERE ( tid=2 ) LIMIT 0,12   [ RunTime:0.001595s ]
+SQL: SELECT `gamesname`,`gamehot` FROM `gamesdetails` WHERE ( tid=4 ) LIMIT 0,13   [ RunTime:0.001313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` LIMIT 1   [ RunTime:0.001394s ]
+SQL: SHOW COLUMNS FROM `lol_newsimg` [ RunTime:0.001506s ]
+SQL: SELECT * FROM `lol_newsimg` ORDER BY dateandtime desc LIMIT 0,4   [ RunTime:0.001457s ]
+SQL: SHOW COLUMNS FROM `lol_freehero` [ RunTime:0.001475s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001384s ]
+SQL: SELECT * FROM `gamestype`  [ RunTime:0.001402s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001376s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001340s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001355s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001339s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='网络游戏' ) LIMIT 1   [ RunTime:0.001272s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='单机游戏' ) LIMIT 1   [ RunTime:0.001263s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='手机游戏' ) LIMIT 1   [ RunTime:0.001742s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001489s ]
+SQL: SELECT * FROM `gamesnews` ORDER BY hints desc LIMIT 0,4   [ RunTime:0.003376s ]
+SQL: SELECT `id`,`title` FROM `gamesnews` WHERE ( nid=3 ) ORDER BY hints desc LIMIT 0,2   [ RunTime:0.008904s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001436s ]
+SQL: SELECT `imgname` FROM `newsimg` WHERE ( newsid=6 && special=1 ) LIMIT 1   [ RunTime:0.001329s ]
+SQL: SELECT `imgname` FROM `newsimg` WHERE ( newsid=5 && special=1 ) LIMIT 1   [ RunTime:0.001260s ]
+SQL: SELECT `id`,`title` FROM `gamesnews` WHERE ( nid=1 && hints<1000 ) ORDER BY hints desc LIMIT 0,2   [ RunTime:0.001323s ]
+SQL: SELECT `imgname` FROM `newsimg` WHERE ( newsid=10 && special=1 ) LIMIT 1   [ RunTime:0.001351s ]
+SQL: SELECT `imgname` FROM `newsimg` WHERE ( newsid=9 && special=1 ) LIMIT 1   [ RunTime:0.001270s ]
+SQL: SELECT `id`,`title` FROM `gamesnews` WHERE ( nid=2 && hints<1000 ) ORDER BY hints desc LIMIT 0,2   [ RunTime:0.001439s ]
+SQL: SELECT `imgname` FROM `newsimg` WHERE ( newsid=17 && special=1 ) LIMIT 1   [ RunTime:0.001679s ]
+SQL: SELECT `imgname` FROM `newsimg` WHERE ( newsid=18 && special=1 ) LIMIT 1   [ RunTime:0.001271s ]
+SQL: SELECT `id`,`title` FROM `gamesnews` WHERE ( nid=4 && hints<1000 ) ORDER BY hints desc LIMIT 0,2   [ RunTime:0.001332s ]
+SQL: SELECT `imgname` FROM `newsimg` WHERE ( newsid=13 && special=1 ) LIMIT 1   [ RunTime:0.001330s ]
+SQL: SELECT `imgname` FROM `newsimg` WHERE ( newsid=14 && special=1 ) LIMIT 1   [ RunTime:0.001270s ]
+SQL: SELECT `id`,`title`,`time` FROM `gamesnews` WHERE ( nid=3 && hints<700 ) ORDER BY hints desc LIMIT 0,2   [ RunTime:0.001350s ]
+SQL: SELECT `id`,`title`,`time` FROM `gamesnews` WHERE ( nid=1 && hints<700 ) ORDER BY hints desc LIMIT 0,2   [ RunTime:0.001422s ]
+SQL: SELECT `id`,`title`,`time` FROM `gamesnews` WHERE ( nid=2 && hints<700 ) ORDER BY hints desc LIMIT 0,2   [ RunTime:0.001336s ]
+SQL: SELECT `id`,`title`,`time` FROM `gamesnews` WHERE ( nid=4 && hints<700 ) ORDER BY hints desc LIMIT 0,2   [ RunTime:0.001420s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/7ab946f4f0f5a79245f9543582fd5300.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2017-08-12T00:55:29+08:00 ] 106.11.159.230 /home.php/gamesnews/index/newsid/www.miitbeian.gov.cn
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001602s ]
+NOTIC: [8] Undefined index: newsId /data/home/bxu2359300359/htdocs/application/Home/Controller/GamesnewsController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001354s ]
+SQL: UPDATE `gamesnews` SET `hints`=hints+1 WHERE ( id= ) [ RunTime:0.001979s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `gamesnews` SET `hints`=hints+1 WHERE ( id= )
+SQL: SELECT * FROM `gamesnews` WHERE ( id= ) LIMIT 1   [ RunTime:0.001040s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `gamesnews` WHERE ( id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001335s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `newsimg` WHERE ( newsid= ) LIMIT 1   [ RunTime:0.001038s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `newsimg` WHERE ( newsid= ) LIMIT 1  
+SQL: SELECT * FROM `newsimg` WHERE ( newsid= ) ORDER BY shunxu  [ RunTime:0.001037s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY shunxu' at line 1
+ [ SQL语句 ] : SELECT * FROM `newsimg` WHERE ( newsid= ) ORDER BY shunxu 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/560da5e34cc660081ae9269f103ae089.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007564s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2017-08-12T01:26:56+08:00 ] 66.249.66.91 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001773s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='英雄联盟' ) LIMIT 1   [ RunTime:0.001395s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='地下城与勇士' ) LIMIT 1   [ RunTime:0.001166s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='阴阳师' ) LIMIT 1   [ RunTime:0.001153s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` LIMIT 1   [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `lol_newsimg` [ RunTime:0.001390s ]
+SQL: SHOW COLUMNS FROM `lol_freehero` [ RunTime:0.001351s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001332s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001321s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001270s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001277s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001279s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='网络游戏' ) LIMIT 1   [ RunTime:0.001273s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='单机游戏' ) LIMIT 1   [ RunTime:0.001191s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='手机游戏' ) LIMIT 1   [ RunTime:0.001162s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001411s ]
+SQL: SELECT * FROM `gamesnews` ORDER BY hints desc LIMIT 0,4   [ RunTime:0.003109s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001394s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/7ab946f4f0f5a79245f9543582fd5300.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2017-08-12T02:12:57+08:00 ] 66.249.66.143 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001649s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='英雄联盟' ) LIMIT 1   [ RunTime:0.001278s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='地下城与勇士' ) LIMIT 1   [ RunTime:0.001091s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='阴阳师' ) LIMIT 1   [ RunTime:0.001064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` LIMIT 1   [ RunTime:0.001917s ]
+SQL: SHOW COLUMNS FROM `lol_newsimg` [ RunTime:0.001323s ]
+SQL: SHOW COLUMNS FROM `lol_freehero` [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001261s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001240s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001163s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001162s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001148s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='网络游戏' ) LIMIT 1   [ RunTime:0.001213s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='单机游戏' ) LIMIT 1   [ RunTime:0.001187s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='手机游戏' ) LIMIT 1   [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001425s ]
+SQL: SELECT * FROM `gamesnews` ORDER BY hints desc LIMIT 0,4   [ RunTime:0.003041s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001347s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/7ab946f4f0f5a79245f9543582fd5300.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2017-08-12T02:28:15+08:00 ] 66.249.66.87 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001540s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='英雄联盟' ) LIMIT 1   [ RunTime:0.001019s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='地下城与勇士' ) LIMIT 1   [ RunTime:0.000999s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='阴阳师' ) LIMIT 1   [ RunTime:0.001003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` LIMIT 1   [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `lol_newsimg` [ RunTime:0.001179s ]
+SQL: SHOW COLUMNS FROM `lol_freehero` [ RunTime:0.001169s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001154s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001024s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001017s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001015s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001020s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='网络游戏' ) LIMIT 1   [ RunTime:0.000995s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='单机游戏' ) LIMIT 1   [ RunTime:0.001010s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='手机游戏' ) LIMIT 1   [ RunTime:0.001008s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001222s ]
+SQL: SELECT * FROM `gamesnews` ORDER BY hints desc LIMIT 0,4   [ RunTime:0.002010s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001311s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/7ab946f4f0f5a79245f9543582fd5300.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2017-08-12T03:03:56+08:00 ] 66.249.66.87 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001797s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='英雄联盟' ) LIMIT 1   [ RunTime:0.001442s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='地下城与勇士' ) LIMIT 1   [ RunTime:0.001417s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='阴阳师' ) LIMIT 1   [ RunTime:0.001206s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` LIMIT 1   [ RunTime:0.001260s ]
+SQL: SHOW COLUMNS FROM `lol_newsimg` [ RunTime:0.001399s ]
+SQL: SHOW COLUMNS FROM `lol_freehero` [ RunTime:0.001403s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001393s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001438s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001274s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001332s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001277s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='网络游戏' ) LIMIT 1   [ RunTime:0.001326s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='单机游戏' ) LIMIT 1   [ RunTime:0.001209s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='手机游戏' ) LIMIT 1   [ RunTime:0.001199s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001459s ]
+SQL: SELECT * FROM `gamesnews` ORDER BY hints desc LIMIT 0,4   [ RunTime:0.003166s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001493s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/7ab946f4f0f5a79245f9543582fd5300.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2017-08-12T04:51:15+08:00 ] 66.249.66.88 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001705s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='英雄联盟' ) LIMIT 1   [ RunTime:0.001341s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='地下城与勇士' ) LIMIT 1   [ RunTime:0.001182s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='阴阳师' ) LIMIT 1   [ RunTime:0.001097s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` LIMIT 1   [ RunTime:0.001218s ]
+SQL: SHOW COLUMNS FROM `lol_newsimg` [ RunTime:0.001296s ]
+SQL: SHOW COLUMNS FROM `lol_freehero` [ RunTime:0.001263s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001273s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001241s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001196s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001216s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001148s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='网络游戏' ) LIMIT 1   [ RunTime:0.001228s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='单机游戏' ) LIMIT 1   [ RunTime:0.001062s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='手机游戏' ) LIMIT 1   [ RunTime:0.001072s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001325s ]
+SQL: SELECT * FROM `gamesnews` ORDER BY hints desc LIMIT 0,4   [ RunTime:0.003053s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001304s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/7ab946f4f0f5a79245f9543582fd5300.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2017-08-12T04:55:55+08:00 ] 66.249.66.88 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001909s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='英雄联盟' ) LIMIT 1   [ RunTime:0.001085s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='地下城与勇士' ) LIMIT 1   [ RunTime:0.001025s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='阴阳师' ) LIMIT 1   [ RunTime:0.001007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` LIMIT 1   [ RunTime:0.001033s ]
+SQL: SHOW COLUMNS FROM `lol_newsimg` [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `lol_freehero` [ RunTime:0.001223s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001232s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001040s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001025s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001017s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001011s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='网络游戏' ) LIMIT 1   [ RunTime:0.001005s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='单机游戏' ) LIMIT 1   [ RunTime:0.001009s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='手机游戏' ) LIMIT 1   [ RunTime:0.000986s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001263s ]
+SQL: SELECT * FROM `gamesnews` ORDER BY hints desc LIMIT 0,4   [ RunTime:0.002058s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001195s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/7ab946f4f0f5a79245f9543582fd5300.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2017-08-12T07:00:15+08:00 ] 66.249.66.89 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001856s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='英雄联盟' ) LIMIT 1   [ RunTime:0.001479s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='地下城与勇士' ) LIMIT 1   [ RunTime:0.001209s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='阴阳师' ) LIMIT 1   [ RunTime:0.001230s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` LIMIT 1   [ RunTime:0.001373s ]
+SQL: SHOW COLUMNS FROM `lol_newsimg` [ RunTime:0.001461s ]
+SQL: SHOW COLUMNS FROM `lol_freehero` [ RunTime:0.001416s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001378s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001372s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001297s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001296s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001308s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='网络游戏' ) LIMIT 1   [ RunTime:0.001312s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='单机游戏' ) LIMIT 1   [ RunTime:0.001188s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='手机游戏' ) LIMIT 1   [ RunTime:0.001204s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001534s ]
+SQL: SELECT * FROM `gamesnews` ORDER BY hints desc LIMIT 0,4   [ RunTime:0.003155s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001456s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/7ab946f4f0f5a79245f9543582fd5300.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000927s ]
+
+[ 2017-08-12T08:18:10+08:00 ] 106.11.159.230 /home.php/Gamesnews/index/newsId/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001662s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001497s ]
+SQL: UPDATE `gamesnews` SET `hints`=hints+1 WHERE ( id=13 ) [ RunTime:0.004522s ]
+SQL: SELECT * FROM `gamesnews` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.001345s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001432s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `newsimg` WHERE ( newsid=13 ) LIMIT 1   [ RunTime:0.001381s ]
+SQL: SELECT * FROM `newsimg` WHERE ( newsid=13 ) ORDER BY shunxu  [ RunTime:0.001247s ]
+NOTIC: [8] Undefined offset: 2 /data/home/bxu2359300359/htdocs/application/Home/Controller/GamesnewsController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/560da5e34cc660081ae9269f103ae089.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2017-08-12T08:27:18+08:00 ] 66.249.66.89 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001686s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='英雄联盟' ) LIMIT 1   [ RunTime:0.001329s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='地下城与勇士' ) LIMIT 1   [ RunTime:0.001069s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='阴阳师' ) LIMIT 1   [ RunTime:0.001087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` LIMIT 1   [ RunTime:0.001258s ]
+SQL: SHOW COLUMNS FROM `lol_newsimg` [ RunTime:0.001573s ]
+SQL: SHOW COLUMNS FROM `lol_freehero` [ RunTime:0.001309s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001280s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001295s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001520s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001282s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001172s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='网络游戏' ) LIMIT 1   [ RunTime:0.001224s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='单机游戏' ) LIMIT 1   [ RunTime:0.001117s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='手机游戏' ) LIMIT 1   [ RunTime:0.001104s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001385s ]
+SQL: SELECT * FROM `gamesnews` ORDER BY hints desc LIMIT 0,4   [ RunTime:0.003007s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001383s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/7ab946f4f0f5a79245f9543582fd5300.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2017-08-12T09:02:01+08:00 ] 42.156.251.187 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001707s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='英雄联盟' ) LIMIT 1   [ RunTime:0.003654s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='地下城与勇士' ) LIMIT 1   [ RunTime:0.001368s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='阴阳师' ) LIMIT 1   [ RunTime:0.001187s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` LIMIT 1   [ RunTime:0.001159s ]
+SQL: SHOW COLUMNS FROM `lol_newsimg` [ RunTime:0.001328s ]
+SQL: SHOW COLUMNS FROM `lol_freehero` [ RunTime:0.001241s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001440s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001286s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001202s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001213s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001187s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='网络游戏' ) LIMIT 1   [ RunTime:0.001261s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='单机游戏' ) LIMIT 1   [ RunTime:0.001089s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='手机游戏' ) LIMIT 1   [ RunTime:0.001128s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001519s ]
+SQL: SELECT * FROM `gamesnews` ORDER BY hints desc LIMIT 0,4   [ RunTime:0.003187s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/7ab946f4f0f5a79245f9543582fd5300.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2017-08-12T10:32:28+08:00 ] 106.11.226.90 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001911s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='英雄联盟' ) LIMIT 1   [ RunTime:0.001539s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='地下城与勇士' ) LIMIT 1   [ RunTime:0.001272s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='阴阳师' ) LIMIT 1   [ RunTime:0.001305s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` LIMIT 1   [ RunTime:0.001430s ]
+SQL: SHOW COLUMNS FROM `lol_newsimg` [ RunTime:0.001576s ]
+SQL: SHOW COLUMNS FROM `lol_freehero` [ RunTime:0.001548s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001453s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001783s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001394s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001966s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001432s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='网络游戏' ) LIMIT 1   [ RunTime:0.001518s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='单机游戏' ) LIMIT 1   [ RunTime:0.001354s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='手机游戏' ) LIMIT 1   [ RunTime:0.002093s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001600s ]
+SQL: SELECT * FROM `gamesnews` ORDER BY hints desc LIMIT 0,4   [ RunTime:0.003445s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001663s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/7ab946f4f0f5a79245f9543582fd5300.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2017-08-12T10:52:55+08:00 ] 66.249.66.88 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001956s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='英雄联盟' ) LIMIT 1   [ RunTime:0.001618s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='地下城与勇士' ) LIMIT 1   [ RunTime:0.001294s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='阴阳师' ) LIMIT 1   [ RunTime:0.001316s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` LIMIT 1   [ RunTime:0.001357s ]
+SQL: SHOW COLUMNS FROM `lol_newsimg` [ RunTime:0.001568s ]
+SQL: SHOW COLUMNS FROM `lol_freehero` [ RunTime:0.001466s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001438s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001431s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001458s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001433s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001409s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='网络游戏' ) LIMIT 1   [ RunTime:0.001431s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='单机游戏' ) LIMIT 1   [ RunTime:0.001289s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='手机游戏' ) LIMIT 1   [ RunTime:0.001309s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001594s ]
+SQL: SELECT * FROM `gamesnews` ORDER BY hints desc LIMIT 0,4   [ RunTime:0.003465s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.002480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/7ab946f4f0f5a79245f9543582fd5300.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2017-08-12T10:58:05+08:00 ] 66.249.66.87 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001759s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='英雄联盟' ) LIMIT 1   [ RunTime:0.001257s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='地下城与勇士' ) LIMIT 1   [ RunTime:0.001304s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='阴阳师' ) LIMIT 1   [ RunTime:0.001229s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` LIMIT 1   [ RunTime:0.001223s ]
+SQL: SHOW COLUMNS FROM `lol_newsimg` [ RunTime:0.001498s ]
+SQL: SHOW COLUMNS FROM `lol_freehero` [ RunTime:0.001434s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001732s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001259s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001258s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001243s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001339s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='网络游戏' ) LIMIT 1   [ RunTime:0.001213s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='单机游戏' ) LIMIT 1   [ RunTime:0.001199s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='手机游戏' ) LIMIT 1   [ RunTime:0.001271s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001630s ]
+SQL: SELECT * FROM `gamesnews` ORDER BY hints desc LIMIT 0,4   [ RunTime:0.003115s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001470s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/7ab946f4f0f5a79245f9543582fd5300.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000796s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2017-08-12T12:04:24+08:00 ] 66.249.66.141 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001609s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='英雄联盟' ) LIMIT 1   [ RunTime:0.001416s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='地下城与勇士' ) LIMIT 1   [ RunTime:0.001179s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='阴阳师' ) LIMIT 1   [ RunTime:0.001177s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` LIMIT 1   [ RunTime:0.001251s ]
+SQL: SHOW COLUMNS FROM `lol_newsimg` [ RunTime:0.001430s ]
+SQL: SHOW COLUMNS FROM `lol_freehero` [ RunTime:0.001372s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001372s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001382s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001291s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001300s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001267s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='网络游戏' ) LIMIT 1   [ RunTime:0.001330s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='单机游戏' ) LIMIT 1   [ RunTime:0.001149s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='手机游戏' ) LIMIT 1   [ RunTime:0.001172s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001457s ]
+SQL: SELECT * FROM `gamesnews` ORDER BY hints desc LIMIT 0,4   [ RunTime:0.003121s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001438s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/7ab946f4f0f5a79245f9543582fd5300.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2017-08-12T12:12:26+08:00 ] 106.11.227.150 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001866s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='英雄联盟' ) LIMIT 1   [ RunTime:0.002844s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='地下城与勇士' ) LIMIT 1   [ RunTime:0.001145s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='阴阳师' ) LIMIT 1   [ RunTime:0.001118s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` LIMIT 1   [ RunTime:0.001224s ]
+SQL: SHOW COLUMNS FROM `lol_newsimg` [ RunTime:0.001356s ]
+SQL: SHOW COLUMNS FROM `lol_freehero` [ RunTime:0.001393s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001415s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001126s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.003638s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001167s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.002614s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='网络游戏' ) LIMIT 1   [ RunTime:0.001131s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='单机游戏' ) LIMIT 1   [ RunTime:0.001195s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='手机游戏' ) LIMIT 1   [ RunTime:0.001144s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001455s ]
+SQL: SELECT * FROM `gamesnews` ORDER BY hints desc LIMIT 0,4   [ RunTime:0.002332s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.002278s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/7ab946f4f0f5a79245f9543582fd5300.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2017-08-12T12:14:44+08:00 ] 66.249.66.89 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001735s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='英雄联盟' ) LIMIT 1   [ RunTime:0.001158s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='地下城与勇士' ) LIMIT 1   [ RunTime:0.001112s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='阴阳师' ) LIMIT 1   [ RunTime:0.001131s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` LIMIT 1   [ RunTime:0.001120s ]
+SQL: SHOW COLUMNS FROM `lol_newsimg` [ RunTime:0.001346s ]
+SQL: SHOW COLUMNS FROM `lol_freehero` [ RunTime:0.001308s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001320s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001121s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001166s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001159s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001132s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='网络游戏' ) LIMIT 1   [ RunTime:0.001112s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='单机游戏' ) LIMIT 1   [ RunTime:0.001119s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='手机游戏' ) LIMIT 1   [ RunTime:0.001139s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001417s ]
+SQL: SELECT * FROM `gamesnews` ORDER BY hints desc LIMIT 0,4   [ RunTime:0.002361s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001371s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/7ab946f4f0f5a79245f9543582fd5300.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000829s ]
+
+[ 2017-08-12T12:45:46+08:00 ] 220.181.108.95 /home.php/Gamesnews/index/newsId/9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001542s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001348s ]
+SQL: UPDATE `gamesnews` SET `hints`=hints+1 WHERE ( id=9 ) [ RunTime:0.004985s ]
+SQL: SELECT * FROM `gamesnews` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001314s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `newsimg` WHERE ( newsid=9 ) LIMIT 1   [ RunTime:0.001263s ]
+SQL: SELECT * FROM `newsimg` WHERE ( newsid=9 ) ORDER BY shunxu  [ RunTime:0.001174s ]
+NOTIC: [8] Undefined offset: 4 /data/home/bxu2359300359/htdocs/application/Home/Controller/GamesnewsController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/560da5e34cc660081ae9269f103ae089.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2017-08-12T15:39:11+08:00 ] 106.11.159.230 /home.php/Home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001767s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='英雄联盟' ) LIMIT 1   [ RunTime:0.001423s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='地下城与勇士' ) LIMIT 1   [ RunTime:0.001216s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='阴阳师' ) LIMIT 1   [ RunTime:0.001243s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` LIMIT 1   [ RunTime:0.001297s ]
+SQL: SHOW COLUMNS FROM `lol_newsimg` [ RunTime:0.001514s ]
+SQL: SHOW COLUMNS FROM `lol_freehero` [ RunTime:0.001419s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001547s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001377s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001337s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001408s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001441s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='网络游戏' ) LIMIT 1   [ RunTime:0.001395s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='单机游戏' ) LIMIT 1   [ RunTime:0.001266s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='手机游戏' ) LIMIT 1   [ RunTime:0.001243s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001504s ]
+SQL: SELECT * FROM `gamesnews` ORDER BY hints desc LIMIT 0,4   [ RunTime:0.003385s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.001481s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/7ab946f4f0f5a79245f9543582fd5300.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2017-08-12T15:53:28+08:00 ] 207.46.13.176 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `gamesdetails` [ RunTime:0.001948s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='英雄联盟' ) LIMIT 1   [ RunTime:0.001772s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='地下城与勇士' ) LIMIT 1   [ RunTime:0.001214s ]
+SQL: SELECT `id` FROM `gamesdetails` WHERE ( gamesname='阴阳师' ) LIMIT 1   [ RunTime:0.001279s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `gamesdetails` LIMIT 1   [ RunTime:0.001276s ]
+SQL: SHOW COLUMNS FROM `lol_newsimg` [ RunTime:0.001615s ]
+SQL: SHOW COLUMNS FROM `lol_freehero` [ RunTime:0.001495s ]
+SQL: SHOW COLUMNS FROM `gamestype` [ RunTime:0.001517s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=1 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001261s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=2 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001255s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=3 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001291s ]
+SQL: SELECT `gamesname`,`smalldesktop`,`gametype` FROM `gamesdetails` WHERE ( tid=4 ) ORDER BY gamehot desc LIMIT 0,10   [ RunTime:0.001241s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='网络游戏' ) LIMIT 1   [ RunTime:0.004651s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='单机游戏' ) LIMIT 1   [ RunTime:0.009999s ]
+SQL: SELECT `id` FROM `gamestype` WHERE ( gamestypename='手机游戏' ) LIMIT 1   [ RunTime:0.001249s ]
+SQL: SHOW COLUMNS FROM `gamesnews` [ RunTime:0.001696s ]
+SQL: SELECT * FROM `gamesnews` ORDER BY hints desc LIMIT 0,4   [ RunTime:0.010127s ]
+SQL: SHOW COLUMNS FROM `newsimg` [ RunTime:0.003656s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Undefined index: usermsg /data/home/bxu2359300359/htdocs/application/Runtime/Cache/Home/7ab946f4f0f5a79245f9543582fd5300.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+

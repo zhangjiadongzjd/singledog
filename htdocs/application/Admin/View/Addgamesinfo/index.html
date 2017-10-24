@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Insert title here</title>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/admin/css/admin.css" media="all"/>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/admin/css/global.css" media="all"/>
+<script>
+	function check(){
+		if(document.frm.gamesname.value==''){    		
+	   		alert('游戏名称不能为空')
+	   		document.frm.gamesname.focus();
+			return false;
+   		}else if(document.frm.gametype.value==''){
+   			alert('游戏名称不能为空')
+   			document.frm.gametype.focus();  	   		
+   	   		return false;
+   		}
+	}
+</script>
+<style>
+table{
+	margin:0 auto;
+}
+
+table tr{
+	height:40px;
+	font-size: 16px;
+    font-family: "微软雅黑 ";
+}
+.wid{
+	font-weight:700;
+	width:200px;
+}
+.inw input{
+	/* width: 160px; */
+	height: 25px;
+    line-height: 25px;
+    text-indent: 15px;
+    font-size: 16px;
+    font-family: "微软雅黑 ";
+}
+ .textwidth{
+	width:160px;
+} 
+#buttonw input{
+	width:50px;
+	height:22px;
+	cursor:pointer;
+}
+select{
+	/* width:100px;  */
+	font-size: 16px;
+	height:28px;
+}
+</style>
+</head>
+<body>
+<!-- 头部 -->
+<include file='public:top'/>
+<!-- 当前位置 -->
+<div id='locationdiv'>
+	<div>
+		<p>后台管理 : 添加游戏信息</p>
+	</div>
+</div>
+<!-- 正文内容 -->
+<div id='main-content'>
+	<div id='main-content1'>
+		<!-- 左侧树状列表 -->
+		<include file='public:left'/>
+		<!-- 右侧页面内容 -->
+		<div id='rightDiv'>
+			<div style='width:650px;height:350px;margin:0 auto;margin-top:50px;'>
+				<form action="__URL__/addgamesinfo" method='post' name='frm' onsubmit='return check()' enctype="multipart/form-data">
+					<table border='1' cellspacing='0' cellpadding='0'>
+						<tr class='inw'>
+							<td class='wid'>游戏名称:</td>
+							<td class='textwidth'>
+								<input type='text' name='gamesname'/>
+							</td>
+							<td class='wid'>游戏类型:</td>
+							<td class='textwidth'>
+								<input type='text' name='gametype'/>
+							</td>
+						</tr>
+						<tr class='inw'>
+							<td class='wid'>游戏原名:</td>
+							<td>
+								<input type='text' name='yname' value='无'/>
+							</td>
+							<td class='wid'>游戏平台:</td>
+							<td>
+								<input type='text' name='platform'/>
+							</td>
+						</tr>
+						<tr class='inw'>
+							<td class='wid'>游戏别名:</td>
+							<td>
+								<input type='text' name='oname' value='无'/>
+							</td>
+							<td class='wid'>开发商:</td>
+							<td>
+								<input type='text' name='developers'/>
+							</td>
+						</tr>
+						<tr class='inw'>
+							<td class='wid'>发行商:</td>
+							<td>
+								<input type='text' name='publisher'/>
+							</td>
+							<td class='wid'>发行日期:</td>
+							<td>
+								<input type='text' name='issuedate'/>
+							</td>
+						</tr>
+						<tr class='inw'>
+							<td class='wid'>游戏画面:</td>
+							<td>
+								<input type='text' name='gamescreen'/>
+							</td>
+							<td class='wid'>玩家人数:</td>
+							<td>
+								<input type='text' name='playernum'/>
+							</td>
+						</tr>
+						<tr class='inw'>
+							<td class='wid'>游戏热门度:</td>	
+							<td>
+								<input type='text' name='gamehot'/> 
+							</td> 	
+							<td class='wid'>游戏分类:</td>
+							<td>
+								<select name='tid'>
+									<foreach name='newstype' item='v'>
+										<option value="{$v.id}">{$v.gamestypename}</option>
+									</foreach>
+								</select>
+							</td>
+									
+						</tr> 
+						<tr>
+							<td class='wid'>大图标:</td>
+							<td>
+								<input type="file" name='bigdesktop'/>
+							</td>
+							<td class='wid'>小图标:</td>
+							<td>
+								<input type="file" name='smalldesktop'/>
+							</td>
+						</tr>
+						<tr id='buttonw'>
+							<td colspan='4'>
+								<input type='submit' value='添加'/>
+								&nbsp;&nbsp;
+								<input type='reset' value='重写'/>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

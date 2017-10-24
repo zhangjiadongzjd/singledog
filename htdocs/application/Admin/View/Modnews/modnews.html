@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/admin/css/admin.css" media="all"/>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/admin/css/global.css" media="all"/>
+<script type="text/javascript" src="__PUBLIC__/admin/js/jquery-1.4.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/kindeditor/kindeditor.js"></script>
+<script type="text/javascript">
+      var editor;
+      KindEditor.ready(function(e){
+          editor = e.create("[name=content]",{
+              width:"800px",
+              height:"400px"
+          });
+      });
+</script>
+<style>
+table tr{
+	height:40px;
+}
+.inputwidth input{
+	width: 600px;
+	height: 25px;
+    line-height: 25px;
+    text-indent: 15px;
+    font-size: 16px;
+    font-family: "微软雅黑 ";
+}
+.selwidth{
+	text-align:left;
+	
+}
+.selwidth select{
+	width:90px;
+	height:30px;
+	font-size: 16px;
+	margin-left:50px;
+}
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 头部 -->
+<include file='public:top'/>
+<!-- 当前位置 -->
+<div id='locationdiv'>
+	<div>
+		<p>后台管理 : 修改新闻内容</p>
+	</div>
+</div>
+<!-- 正文内容 -->
+<div id='main-content'>
+	<div id='main-content1'>
+		<!-- 左侧树状列表 -->
+		<include file='public:left'/>
+		<!-- 右侧页面内容 -->
+		<div id='rightDiv'>
+			<form action='__URL__/modnewscontent' method='post'>
+				<table border='1' cellpadding="0" cellspacing="0" style='width:800px;margin:0 auto;'>
+					<tr>
+						<td style='width:100px;height:30px;'>新闻标题:</td>
+						<td class='inputwidth'>
+							<input type='text' name='title' size="80" value='{$current_news.title}'/>
+							<input type='hidden' name='id' value="{$current_news.id}"/>
+						</td>
+					</tr>
+					<tr>
+						<td>新闻类型:</td>
+						<td class='selwidth'>
+							<select name='nid'>
+								<foreach name='gamestype' item='v'>
+									<if condition="$v.id == $current_news['nid']">
+										<option value="{$v.id}" selected="selected">{$v.gamestypename}</option>
+									<else/>
+										<option value="{$v.id}">{$v.gamestypename}</option>
+									</if>
+								</foreach>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>新闻作者:</td>
+						<td class='inputwidth'>
+							<input type='text' name='author' size="80" value='{$current_news.author}'/>
+						</td>
+					</tr>
+					<tr>
+						<td>新闻来源:</td>
+						<td class='inputwidth'>
+							<input type='text' name='source' size="80" value='{$current_news.source}'/>
+						</td>
+					</tr>
+					<tr>
+						<td>新闻概述:</td>
+						<td class='inputwidth'>
+							<input type='text' name='overview' size="80" value='{$current_news.overview}'/>
+						</td>
+					</tr>
+					<!-- <foreach name='news_img' item='v'>
+						<if condition="$v.special ==1">
+							<tr>
+								<td>新闻主图片:</td>
+								<td>	
+									<img src='__PUBLIC__/admin/images/newsimg/{$v.imgname}' style="width:200px;"/>			
+								</td>					
+							</tr>
+						</if>
+					</foreach>
+					<foreach name='news_img' item='v'>
+						<if condition="$v.special ==0">
+							<tr>
+								<td>新闻图片:</td>
+								<td>	
+									<img src='__PUBLIC__/admin/images/newsimg/{$v.imgname}' style="width:200px;"/>			
+								</td>					
+							</tr>				
+						</if>
+					</foreach> -->
+					<tr>
+						<td colspan='2' style="font:18px 微软雅黑;">新闻内容:</td>
+					</tr>
+					<tr>
+						<td colspan='2'>
+							<textarea name="content">{$current_news.content}</textarea>
+						</td>
+					</tr>
+					<tr>
+			            <td colspan='2'>
+			              <input type="submit" value="确认修改" class="btn2"/>
+			            </td>
+         			 </tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

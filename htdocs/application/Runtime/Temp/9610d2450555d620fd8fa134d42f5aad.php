@@ -1,0 +1,3 @@
+<?php
+//000000086400a:4:{i:0;a:5:{s:5:"imgId";s:2:"29";s:7:"imgname";s:13:"140930708.jpg";s:7:"special";s:1:"1";s:6:"newsid";s:1:"9";s:6:"shunxu";s:1:"0";}i:1;a:5:{s:5:"imgId";s:2:"22";s:7:"imgname";s:31:"1262585016a7ce9563.76302967.jpg";s:7:"special";s:1:"0";s:6:"newsid";s:1:"9";s:6:"shunxu";s:1:"1";}i:2;a:5:{s:5:"imgId";s:2:"23";s:7:"imgname";s:31:"1262585016a7cf29d5.16332858.jpg";s:7:"special";s:1:"0";s:6:"newsid";s:1:"9";s:6:"shunxu";s:1:"2";}i:3;a:5:{s:5:"imgId";s:2:"24";s:7:"imgname";s:31:"1262585016a7cfd614.89618342.jpg";s:7:"special";s:1:"0";s:6:"newsid";s:1:"9";s:6:"shunxu";s:1:"3";}}
+?>

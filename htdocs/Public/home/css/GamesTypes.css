@@ -1,0 +1,209 @@
+@CHARSET "UTF-8";
+ body{
+	/* background:url(../images/bg.jpg) center 0 no-repeat; */
+ 	/* background-color:#eff; */
+}
+/* 头部 */
+#head-navi{
+	width:100%;
+	height:45px;
+	padding-top:80px;
+}
+#gamestype-navi{
+	width:1200px;
+	height:45px;
+	margin:0 auto;
+/* 	margin-top:80px; */
+}
+#gamestype-navi ul{
+	float:left;
+	height:45px;
+	line-height:38px;
+	overflow:hidden;
+}
+#gamestype-navi ul li{
+	float:left;
+	display:block;
+	width:180px;
+	text-align:center;
+	font-size:18px;
+	color:#333;
+	
+}
+#gamestype-navi ul li a{
+	display:block;
+	color:#333;
+	text-decoration:none;
+	cursor:pointer;
+	transition:all 1s;
+}
+#gamestype-navi ul li a span{
+	display:block;
+}
+#gamestype-navi ul li a:hover{
+	color:#ff5c00;;
+	text-decoration:none;
+	margin-top:-38px;
+}
+
+#gamestype-navi li div{
+	width:80px;
+	height:35px;
+	margin-left:95px;
+	margin-top:1px;
+	/* background-color:#fff; */
+	border:1px solid #fff;
+	border-radius:4px;
+	box-shadow: 1px 2px 10px 1px #ccc; 
+}
+/* 头部结束 */
+
+/* 游戏类型名称开始 */
+#gamestypes-name{
+	width:100%;
+	margin-top:10px;
+}
+#gamestypes-name1{
+	width:1200px;
+	height:50px;
+	margin:0 auto;
+	line-height:50px;
+	/* background-color:red; */
+}
+#gamestypes-name1 h2{
+	width:450px;
+	height:50px;
+	border-bottom:1px solid #bbb;
+	font-size:25px;
+	font-family:微软雅黑;
+	margin-left:20px;
+}
+/* 游戏类型名称结束 */
+
+/* 中间内容开始  */
+#gamestypes-content{
+	width:1200px;
+	/* height:1000px; */
+	margin:0 auto;
+	margin-top:15px;
+	/* background-color:red; */
+/* 	border-radius:10px;
+	box-shadow: 0 4px 20px 2px #ddd;  */
+}
+#gamestypes-c{
+	float:left;
+	width:600px;
+	height:400px;
+	/* background-color:pink; */
+}
+#gamestypes-img{
+	float:left;
+	width:180px;
+	height:180px;
+	background-color:#fff;
+	margin-top:10px;
+	margin-left:10px;
+	border-radius:10px;
+	box-shadow: 0 8px 20px 2px #aaa;
+   /*  transform:rotateY(0deg);
+	transition:2s transform; */
+	transform:rotate(0deg);
+	transition:2s transform;
+	overflow:hidden;
+	display:table;
+}
+#gamestypes-img:hover{
+	width:180px;
+	height:180px;
+ 	transform:rotate(10deg);
+	transition:.7s transform;
+}
+#gamestypes-img span{
+	display:table-cell;
+    vertical-align:middle;
+}
+#gamestypes-img img{
+	width:180px;
+	vertical-align:middle;
+	/* margin-top:40px; */
+}
+#gamestypes-c-right{
+	float:left;
+	margin-left:10px;
+	margin-top:5px;
+	width:390px;
+	overflow:hidden;
+	height:380px;
+	background-color:#fff;
+	border-radius:10px;
+	box-shadow: 0 8px 20px 2px #ccc;
+	
+}
+#gamestypes-c-right h2{
+	margin-top:5px;
+	/* text-align:center; */
+	text-indent:1em;
+	font-size:25px;
+	font-family:微软雅黑;
+	color:#333;
+	font-weight:normal;
+}
+#gamestypes-c-bottom{
+	width:390px;
+	height:300px;
+	margin-top:10px;
+	background-color:#eee;
+}
+#gamestypes-c-bottom dt{
+	
+	float: left;
+	display:block;
+	width: 80px;
+    padding: 0 5px 0 12px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    color: #999;
+	font: 14px/1.5 arial;
+	line-height: 26px;
+	border-bottom:1px dotted #aaa;
+	margin-left:10px;
+}
+#gamestypes-c-bottom dd{
+	color: #333;
+    width: 240px;
+	height:26px;
+    float: left; 
+	line-height: 26px;
+    display: block;
+	border-bottom:1px dotted #aaa;
+	font-size:12px;
+	/* margin-left:10px; */
+	text-indent:2em;
+}
+   
+/* 中间内容结束 */
+/* 分页栏开始 */
+#tab-bar{
+	float:left;
+	width:1200px;
+	height:50px;
+	/* background-color:red; */
+}
+#tab-bar div{
+	width:600px;
+	height:50px;
+	line-height:50px;
+	margin:0 auto;
+	/* background-color:pink; */
+	text-align:center;
+}
+/* #tab-bar div a{
+	padding-left:30px;
+} */
+#tab-bar div a:hover{
+	color:#ec4828;
+	text-decoration:none;
+}

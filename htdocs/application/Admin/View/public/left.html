@@ -1,0 +1,47 @@
+<div id='leftDiv'><script type="text/javascript" src="__PUBLIC__/admin/js/dtree.js"></script>
+			<script  type="text/javascript"> 
+			  function hello()
+			  {
+			    d = new dTree('d','__PUBLIC__/admin/');
+			
+			    d.add(0,-1,'后台管理','');
+			    d.add(1,0,'重新登陆','javascript:logout()');
+			
+			    d.add(2,0,'游戏新闻管理','');
+			    d.add(21,2,'添加新闻','__APP__/Addnews/index.html');
+			    d.add(22,2,'修改新闻','__APP__/Modnews/index.html');
+			
+			    d.add(3,0,'游戏分类管理','');
+			    d.add(31,3,'添加游戏分类','__APP__/Addgamestype/index.html');
+			    d.add(32,3,'修改游戏分类','__APP__/Modgamestype/index.html');
+			    
+			    d.add(4,0,'游戏信息管理','');
+			    d.add(41,4,'添加游戏信息','__APP__/Addgamesinfo/index.html');
+			    d.add(42,4,'修改游戏信息','__APP__/Modgamesinfo/index.html');
+			    
+			    d.add(5,0,'个别游戏管理','');
+			    d.add(51,5,'LOL游戏信息','');
+			    d.add(511,51,'添加游戏新闻图片','__APP__/Addlolnewsimg/index.html');
+			    d.add(512,51,'修改游戏新闻图片','__APP__/Modlolnewsimg/index.html');
+			    d.add(513,51,'添加免费英雄信息','__APP__/Addfreehero/index.html');
+			    d.add(514,51,'修改免费英雄信息','__APP__/Modfreehero/index.html');
+			    d.add(52,5,'DNF游戏信息','');
+			    d.add(521,52,'添加游戏新闻图片','addnewsimg.php');
+			    d.add(522,52,'修改游戏新闻图片','modnewsimg.php');
+			    
+			    d.add(6,0,'用户管理','');
+			    d.add(61,6,'添加用户','adduser.php');
+			
+			    d.add(7,0,'返回首页','index.php');
+			
+			    document.write(d);
+			  }
+			
+			  hello();
+			  function logout(){
+				  if(confirm('是否退出登录')){
+					  window.location="__APP__/Login/logout";
+				  }
+			  }
+			</script>
+		</div>

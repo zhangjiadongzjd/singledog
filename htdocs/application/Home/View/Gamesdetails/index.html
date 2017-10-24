@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Insert title here</title>
+<link rel="shortcut icon" href="__PUBLIC__/home/images/Logo/logo.png.ico"/>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/global.css" media="all"/>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/GamesTypes.css" media="all"/>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/home.css" media="all"/>
+</head>
+<body>
+<!-- 注册头开始 -->
+<include file="public:login_header"/>
+<!-- 注册头结束 -->
+<!-- 导航头开始 -->
+<include file="public:head"/>
+<!-- 导航头结束 -->
+<!-- 游戏类型名称开始 -->
+<div id='gamestypes-name'>
+	<div id='gamestypes-name1'>
+		<h2>网络游戏</h2>
+	</div>
+</div>
+<!-- 游戏类型名称结束 -->
+<!-- 中间内容开始 -->
+<div id='gamestypes-content' class='clear'>
+	<foreach name='gamesdetails' item="v">
+	<div id='gamestypes-c'>
+		<div id='gamestypes-img'>	    
+			<span><img src="__PUBLIC__/admin/images/gamedesktop/{$v.bigdesktop}"/></span>
+		</div>
+		<div id='gamestypes-c-right'>
+			<h2>{$v.gamesname}</h2>
+			<div id='gamestypes-c-bottom'>
+				<dl>
+					<dt>中文名</dt>
+						<dd>{$v.gamesname}</dd>
+					<dt>原版名称</dt>
+						<dd>{$v.yname}</dd>
+					<dt>其他名称</dt>
+						<dd>{$v.oname}</dd>
+					<dt>游戏类型</dt>
+						<dd>{$v.gametype}</dd>
+					<dt>游戏平台</dt>
+						<dd>{$v.platform}</dd>
+					<dt>开发商</dt>
+						<dd>{$v.developers}</dd>
+					<dt>发行商</dt>
+						<dd>{$v.publisher}</dd>
+					<dt>发行日期</dt>
+						<dd>{$v.issuedate}</dd>
+					<dt>游戏画面</dt>
+						<dd>{$v.gamescreen}</dd>
+					<dt>玩家人数</dt>
+						<dd>{$v.playernum}</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	</foreach>
+	<div id='tab-bar'>
+		<div>
+			{$pageList}
+		</div>
+	</div>
+</div>
+<!-- 中间内容结束 -->
+<!-- 网站底部 -->
+<include file="public:footer"/>
+</body>
+</html>

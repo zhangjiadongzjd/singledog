@@ -1,0 +1,181 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册页面</title>
+<link type="text/css" rel="stylesheet" href="/Public/home/css/global.css" media="all"/>
+<link type="text/css" rel="stylesheet" href="/Public/home/css/regist.css" media="all"/>
+<link href="/Public/home/css/lyz.calendar.css" rel="stylesheet" type="text/css" media="all"/>
+<script type="text/javascript" src="/Public/home/js/jquery-1.5.1.js"></script>
+<script src="/Public/home/js/lyz.calendar.min.js" type="text/javascript"></script>
+<script>
+    $(function () {
+        $("#txtBeginDate").calendar({
+            controlId: "divDate",                                 // 弹出的日期控件ID，默认: $(this).attr("id") + "Calendar"
+            speed: 200,                                           // 三种预定速度之一的字符串("slow", "normal", or "fast")或表示动画时长的毫秒数值(如：1000),默认：200
+            complement: true,                                     // 是否显示日期或年空白处的前后月的补充,默认：true
+            readonly: true,                                       // 目标对象是否设为只读，默认：true
+            upperLimit: new Date(),                               // 日期上限，默认：NaN(不限制)
+            lowerLimit: new Date("2011/01/01"),                   // 日期下限，默认：NaN(不限制)
+            callback: function () {                               // 点击选择日期后的回调函数
+               // alert("您选择的日期是：" + $("#txtBeginDate").val());
+            }
+        });  
+    });
+    function check(){
+       
+        	if(document.frm.username.value==''){    		
+        		 $('[name=username]').next().html('请输入账号')
+        		 $("[name=username]").next().css('color','red')
+        		 document.frm.username.focus();
+        		//alert('aaa')
+        		return false;
+        	}else if(document.frm.password.value==''){
+        		 $('[name=password]').next().html('请输入密码')
+        		 document.frm.password.focus();
+        		 return false;
+        	}else if(document.frm.password1.value==''){
+        		 $('[name=password1]').next().html('请输入确认密码')
+        		 document.frm.password1.focus();
+        		 return false;
+        	}/* else if(document.frm.birthday.value==''){
+	       		 $('[name=birthday]').next().html('请输入出生年月')
+	    		 document.frm.birthday.focus();
+	    		 return false; */
+        	else if(document.frm.email.value==''){
+	          	$('[name=email]').next().html('请输入邮箱')
+	       		 document.frm.email.focus();
+	       		 return false;
+           	}else if($("[name=email]").next().html()=='邮箱格式不正确' || $("[name=email]").next().html()==''){
+           		 document.frm.email.focus();
+	       		 return false;
+           	}
+    }
+  
+/*     	var len=document.getElementsByTagName('input').length
+    	for(var i=0;i<len;i++){
+    		 */
+    $(function(){
+	    	$('input:eq(0)').blur(function(){	    		
+	    		if($(this).val()==''){
+	    			$(this).next().html('请输入账号')  
+	    			$(this).next().css('color','#f00')
+	    		}else{
+	    			 $.ajax({
+	 	    			"url":"/home.php/Regist/checkusername",
+	 	    			"type":'post',
+	 	    		 	"data":{"username":$("[name=username]").val()},
+	 	    		 	"success":function(re){
+	 	    		 		if(re==1){
+	 	    		 			$("[name=username]").next().html('*该用户名已存在')
+	 	    		 		 }else if(re==2){
+	 	    		 			$("[name=username]").next().html('该用户名可以使用')
+	 	    		 			$("[name=username]").next().css('color','#0a0')
+	 	    		 		 }
+	 	    		 	  }
+	 	    		   })
+	    		}
+    		})
+    	})
+     $(function(){
+	    	$('input:eq(1)').blur(function(){	    		
+	    		if($(this).val()==''){
+	    			$(this).next().html('请输入密码')   
+	    		}else{
+	    		 $(this).next().html('')    		
+	    		 }
+	    	   
+    		})
+    	})   
+    $(function(){
+    		
+	    	$('input:eq(2)').blur(function(){	
+	    		var password=$("[name=password]").val();
+	    		//alert(password)
+    			var password1=$("[name=password1]").val();
+	    		if($(this).val()==''){
+	    			$(this).next().html('请输入确认密码')      			
+	    		}else if(password != password1){
+	    			$(this).next().html('两次密码不一致')   
+	    		}else{
+	    		 $(this).next().html('')
+	    		}
+    		})
+    	})    
+    $(function(){
+	    	$('input:eq(3)').blur(function(){	    		
+	    		if($(this).val()==''){
+	    			$(this).next().html('请输入邮箱') 
+	    			$(this).next().css('color','#f00')
+	    		}else{
+	    			$.ajax({
+	 	    			"url":"/home.php/Regist/checkmail",
+	 	    			"type":'post',
+	 	    		 	"data":{"email":$("[name=email]").val()},
+	 	    		 	"success":function(re){
+	 	    		 		if(re==1){
+	 	    		 			$("[name=email]").next().html('邮箱格式不正确')
+	 	    		 			$("[name=email]").next().css('color','#f00')
+	 	    		 		 }else if(re==2){
+	 	    		 			$("[name=email]").next().html('该邮箱可以使用')
+	 	    		 			$("[name=email]").next().css('color','#0a0')
+	 	    		 		 }
+	 	    		 	  }
+	 	    		   })
+	    		}
+    		})
+    	})   
+/*  	$(function(){
+	    	$('input:eq(4)').blur(function(){	    		
+	    		if($(this).val()==''){
+	    			$(this).next().html('请选择出生日期')   
+	    		}else{
+	    		 $(this).next().html('')
+	    		}
+    		})
+    	}) */     	
+</script>
+</head>
+<body>
+	<div class='tag-top'>
+	
+	</div> 
+	<div class='con1'>
+		<div class='tit'>注册账号</div>
+		<div class='form1'>
+			<form action='/home.php/Regist/regist' method='post' name='frm' onsubmit='return check()'>
+				<div class='userName'>
+					<span><font style="color:red">*</font>用户名:</span>
+					<input type='text' name='username'/><div></div>
+				</div>
+				<div class='password'>
+					<span><font style="color:red">*</font>密码:</span>
+					<input type='password' name='password'/><div></div>
+				</div>
+				<div class='password'>
+					<span><font style="color:red">*</font>确认密码:</span>
+					<input type='password' name='password1'/><div></div>
+				</div>
+				<div class='email'>
+					<span><font style="color:red">*</font>邮箱:</span>
+					<input type='text' name='email'/><div></div>
+				</div>
+				<div class='birthday'>
+					<span>出生日期:</span>
+					<input type='text' name='birthday' id='txtBeginDate'/><div></div>
+				</div>
+				<div class='sex'>
+					<span>性别:</span>
+					<input type='radio' name='sex' checked='checked' value='0'/><span class='sex1'>男</span>
+					<input type='radio' name='sex' value='1'/><span class='sex1'>女</span>
+				</div>
+				<div class='sub'>
+					<input type='submit' value='提交' class='b1'/>
+					<input type='reset' value='重写' class='b2'/>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+</body>
+</html>

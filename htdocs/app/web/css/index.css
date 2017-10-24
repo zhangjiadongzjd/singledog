@@ -1,0 +1,177 @@
+@CHARSET "UTF-8";
+body{
+	background-color:#ddd;
+}
+#total{
+	width:100%;
+	margin:0 auto;
+	/* background-color:red; */
+}
+
+#total #total_position{
+	/* float:left; */
+	width:1200px;
+	 /* height:2500px;  */
+	/* background-color:red; */
+	margin:0 auto;
+	margin-top:80px;
+}
+
+.img_change{
+	height:510px;
+	/* background-color:white; */
+	margin:0 auto;
+}
+
+.img_top{
+	width:1160px;
+	height:510px;
+	margin:0 auto;
+	/* background-color:black; */
+}
+
+.img_mid{
+	display:block;
+	width:1160px;
+	height:700px;
+	margin:0 auto;
+	margin-top:50px;
+	background-color:white;
+	border:1px solid #bcbcbc;
+	border-radius:20px
+}
+
+.img_mid img{
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	width:1160px;
+	height:510px;
+}
+
+.content{
+	width:1160px;
+	height:190px;
+	/* background-color:grey; */
+}
+
+.content_left{
+	float:left;
+	width:580px;
+	height:190px;
+	padding-left:15px;
+	/* background-color:white; */
+}
+
+.content_title{
+	width:580px;
+	height:63px;
+	/* background-color:yellow; */
+}
+
+.content_title font{
+	font-size:30px;
+	line-height:63px;
+	margin-left:20px;
+}
+
+.content_style{
+	width:580px;
+	height:63px;
+	/* background-color:red; */
+}
+
+.content_style div{
+	float:left;
+	margin-top:10px;
+	margin-left:20px;
+	height:40px;
+	border:1px solid #ff3300;
+	padding-left:10px;
+	padding-right:10px;
+	border-radius:10px;
+}
+
+ .content_style font{
+	/* border:1px solid white; */
+	font-size:30px;
+	line-height:40px;
+ 	color:#ff3300;
+	/* margin-left:20px; */
+}
+
+.time{
+	width:580px;
+	height:63px;
+	/* background-color:red; */
+}
+
+.time font{
+	font-size:30px;
+	line-height:63px;
+	margin-left:20px;
+	color:#747474;
+}
+
+.content_right{
+	float:right;
+	width:580px;
+	height:190px;
+	/* background-color:green; */
+}
+
+.content_right{
+	float:right;
+	width:200px;
+	height:190px;
+	margin-right:150px;
+	/* background-color:blue; */
+}
+
+.money{
+	width:200px;
+	height:65px;
+	background-color:white;
+	margin-top:10px;
+	text-align:center;
+}
+
+.money font{
+	width:200px;
+	font-size:30px;
+	line-height:63px;
+	color:red;
+}
+
+.bm_button{
+	width:200px;
+	height:65px;	
+	margin-top:10px;
+	text-align:center;
+}
+
+.bm_button font{
+	width:200px;
+	font-size:30px;
+	line-height:63px;
+	/* padding-left:40px;
+	padding-right:40px; */
+	
+	border-radius:10px;	
+	font-weight:700;
+	cursor:pointer;	
+	font-family:Microsoft YaHei;
+}
+
+.sign_up{
+	padding:7px 60px;
+	color:white;
+	background-color:#ff3300;
+	box-shadow: 0 10px 18px 2px #777;
+}
+
+.registered{
+	padding:7px 27px;
+	color:#fff;
+	background-color:#b5b7b4;
+	box-shadow: 0 10px 18px 2px #777;
+}

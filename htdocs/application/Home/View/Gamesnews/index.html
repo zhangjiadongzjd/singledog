@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Insert title here</title>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/global.css" media="all"/>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/GamesTypes.css" media="all"/>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/home.css" media="all"/>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/GamesNews.css" media="all"/>
+</head>
+<body>
+<!-- 注册头开始 -->
+<include file="public:login_header"/>
+<!-- 注册头结束 -->
+<!-- 导航头开始 -->
+<include file="public:head"/>
+<!-- 导航头结束 -->
+<!-- 新闻导航开始 -->
+<div id='news-navi-bg'>
+	<div id='newscontents-navi'>
+		<p><a>游戏新闻</a>　<span>></span>　网络新闻</p>
+	</div>
+</div>
+<!-- 新闻导航结束 -->
+<!-- 新闻内容开始 -->
+<div id='middlecontents'>
+	<div id='newscontents'>
+		<div id='newscontents-title'>
+			<p>{$newscontent.title}</p>
+		</div>
+		<div id='newscontents-date'>
+			<p>发表时间:{$newscontent.time}</p>
+		</div>
+		<div id='newscontents-author'>
+			<p>【{$newscontent.source}：{$newscontent.author}】</p>
+		</div>
+		<div id='newscontents-content'>
+			<p>{$content}</p>
+		</div>
+	</div>
+</div>
+
+
+<!-- 新闻内容结束 -->
+<!-- 网站底部 -->
+<include file="public:footer"/>
+</body>
+</html>

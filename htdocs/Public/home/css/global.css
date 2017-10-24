@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+body{
+	font-size:12px;
+	font-family:宋体,arial;
+}
+body,p,div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,tr,td,th,form,input,select,textarea{
+	margin:0;
+	padding:0;
+}
+a{
+	color:#333;
+	text-decoration:none;
+}
+a:hover{
+	color:#f00;
+	text-decoration:underline;
+}
+img{
+	border:0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:16px;
+	font-weight:bold;
+}
+/*去掉项目符号*/
+ul,ol,li{
+	list-style:none;
+}
+/*去掉a input 高亮边框 */
+:focus{
+	outline:none;
+}
+/*万能清除*/
+.clear{
+	zoom:1;
+}
+.clear:after{
+   content:".";
+   display:block;
+   clear:both;
+   height:0;
+   visibility:hidden;
+}
+/*字体加粗*/
+.bold{
+	font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

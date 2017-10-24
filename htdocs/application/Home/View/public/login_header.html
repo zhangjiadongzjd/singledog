@@ -1,0 +1,14 @@
+<div id='topbar'>
+	<div id='topbar-t1'>					
+			<div id='login-l1'>	
+			<if condition="$Think.session.usermsg.username neq ''">
+				您好,　<a class='havelogin' href="__APP__/Login/index">{$Think.session.usermsg.username}</a>&nbsp;|&nbsp;<a href="__APP__/Login/logout">退出</a>
+			<else/>			
+				<a class='notlogin' href="__APP__/Login/index">登录</a>&nbsp;|&nbsp;<a href="__APP__/Regist/index">注册</a>											
+			</if>
+			</div>	
+			<div id='topbar-hot'>
+				<a href="#">热门游戏</a>
+			</div>	
+	</div>
+</div>

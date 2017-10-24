@@ -1,0 +1,66 @@
+@CHARSET "UTF-8";
+body{
+	background-color:#fff;
+}
+#header{
+	width:100%;
+}
+#header-title{
+	margin:0 auto;
+	margin-top:30px;
+	width:1200px;
+	height:60px;
+	background-color:#202A31;
+	text-align:center;
+}
+#header-title p{
+	width:1200px;
+	height:80px;
+	display:block;
+	color:#ccc;
+	font:30px/60px bold 微软雅黑;
+}
+#locationdiv{
+	width:100%;
+}
+#locationdiv div{
+	margin:0 auto;
+	width:1200px;
+	height:35px;
+	background-color:#fff;
+	text-indent:2em;
+	border-bottom:2px solid #666;
+}
+#locationdiv div p{
+	font:15px/35px 微软雅黑;
+}
+/* 正文内容 */
+#main-content{
+	width:100%;
+}
+#main-content1{
+	width:1200px;
+	height:800px;
+	margin:0 auto;
+	background-color:#fff;
+}
+/* 左侧树状列表 */
+#leftDiv{
+	width: 250px;
+    background-color: #D3D6FF;
+    float: left;
+    height: 800px;
+    text-align: left;
+}
+/* 右侧页面内容 */
+#rightDiv{
+	width: 950px;
+    /* background-color:red; */
+    float: left;
+    height: 800px;
+	text-align:center;
+}
+#rightDiv p{
+	margin-top:50px;
+	font:50px 微软雅黑;
+}
